@@ -1,0 +1,15 @@
+{% extends 'groups/group_base.html' %}
+
+{% block group_content %}
+
+<div class="ui segment">
+    <h3>Create a new group</h3>
+</div>
+
+<form action="{% url 'groups:create'%}" method="post" class="ui form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Create" class="ui positive button">
+</form>
+
+{% endblock  %}

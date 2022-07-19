@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<div class= "ui segments">
+    <div class="row">
+        {% block preblock %}{% endblock  %}
+        {% block group_content %}{% endblock  %}
+        {% block postgroup %}{% endblock  %}
+    </div>
+</div>
+
+{% endblock  %}
